@@ -1,0 +1,31 @@
+{
+    "name": "project-vidura",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --watch src -r esm --inspect-brk --inspect=0.0.0.0:9229 src/server.js",
+        "make-bl-bundle": "webpack --config webpack.config.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@bitbucket.org/rivigotech/project-vidura.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/rivigotech/project-vidura#readme",
+    "devDependencies": {
+        "nodemon": "1.18.11",
+        "webpack": "4.30.0",
+        "webpack-cli": "3.3.1"
+    },
+    "dependencies": {
+        "@bit/rivigo.ui.utils.redux-wow": "0.0.8",
+        "esm": "3.2.22",
+        "node-fetch": "2.4.1",
+        "node-static": "0.7.11",
+        "redux": "4.0.1",
+        "ws": "6.2.1"
+    }
+}
